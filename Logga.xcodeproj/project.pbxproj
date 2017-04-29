@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661ABBD21EABA07F004B5ACB /* Dude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661ABBD01EABA07F004B5ACB /* Dude.swift */; };
+		661ABBD31EABA07F004B5ACB /* Dude.xib in Resources */ = {isa = PBXBuildFile; fileRef = 661ABBD11EABA07F004B5ACB /* Dude.xib */; };
 		6683A47E1EA79CF9003461A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6683A47D1EA79CF9003461A8 /* AppDelegate.swift */; };
 		6683A4801EA79CF9003461A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6683A47F1EA79CF9003461A8 /* Assets.xcassets */; };
 		6683A4831EA79CF9003461A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6683A4811EA79CF9003461A8 /* MainMenu.xib */; };
 		6683A48E1EA79CF9003461A8 /* LoggaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6683A48D1EA79CF9003461A8 /* LoggaTests.swift */; };
 		6683A4991EA79CF9003461A8 /* LoggaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6683A4981EA79CF9003461A8 /* LoggaUITests.swift */; };
+		6683A4A71EA79E8C003461A8 /* logo v2-t.png in Resources */ = {isa = PBXBuildFile; fileRef = 6683A4A61EA79E8C003461A8 /* logo v2-t.png */; };
+		6683A4B11EA7AB9C003461A8 /* collec.png in Resources */ = {isa = PBXBuildFile; fileRef = 6683A4B01EA7AB9C003461A8 /* collec.png */; };
+		668CD41A1EB0FC5C0047AAEF /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 668CD4191EB0FC5C0047AAEF /* btn.png */; };
+		6691C0591EAA2F50000E2B16 /* modalGUy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6691C0571EAA2F50000E2B16 /* modalGUy.swift */; };
+		6691C05A1EAA2F50000E2B16 /* modalGUy.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6691C0581EAA2F50000E2B16 /* modalGUy.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661ABBD01EABA07F004B5ACB /* Dude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dude.swift; sourceTree = "<group>"; };
+		661ABBD11EABA07F004B5ACB /* Dude.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dude.xib; sourceTree = "<group>"; };
 		6683A47A1EA79CF9003461A8 /* Logga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6683A47D1EA79CF9003461A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6683A47F1EA79CF9003461A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +52,11 @@
 		6683A4941EA79CF9003461A8 /* LoggaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6683A4981EA79CF9003461A8 /* LoggaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggaUITests.swift; sourceTree = "<group>"; };
 		6683A49A1EA79CF9003461A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6683A4A61EA79E8C003461A8 /* logo v2-t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo v2-t.png"; path = "../../../Library/Mobile Documents/com~apple~Preview/Documents/logo v2-t.png"; sourceTree = "<group>"; };
+		6683A4B01EA7AB9C003461A8 /* collec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collec.png; sourceTree = "<group>"; };
+		668CD4191EB0FC5C0047AAEF /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
+		6691C0571EAA2F50000E2B16 /* modalGUy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modalGUy.swift; sourceTree = "<group>"; };
+		6691C0581EAA2F50000E2B16 /* modalGUy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = modalGUy.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +107,17 @@
 		6683A47C1EA79CF9003461A8 /* Logga */ = {
 			isa = PBXGroup;
 			children = (
+				668CD4191EB0FC5C0047AAEF /* btn.png */,
+				6683A4B01EA7AB9C003461A8 /* collec.png */,
+				6683A4A61EA79E8C003461A8 /* logo v2-t.png */,
 				6683A47D1EA79CF9003461A8 /* AppDelegate.swift */,
 				6683A47F1EA79CF9003461A8 /* Assets.xcassets */,
 				6683A4811EA79CF9003461A8 /* MainMenu.xib */,
 				6683A4841EA79CF9003461A8 /* Info.plist */,
+				6691C0571EAA2F50000E2B16 /* modalGUy.swift */,
+				661ABBD01EABA07F004B5ACB /* Dude.swift */,
+				661ABBD11EABA07F004B5ACB /* Dude.xib */,
+				6691C0581EAA2F50000E2B16 /* modalGUy.xib */,
 			);
 			path = Logga;
 			sourceTree = "<group>";
@@ -223,6 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6683A4B11EA7AB9C003461A8 /* collec.png in Resources */,
+				661ABBD31EABA07F004B5ACB /* Dude.xib in Resources */,
+				6683A4A71EA79E8C003461A8 /* logo v2-t.png in Resources */,
+				6691C05A1EAA2F50000E2B16 /* modalGUy.xib in Resources */,
+				668CD41A1EB0FC5C0047AAEF /* btn.png in Resources */,
 				6683A4801EA79CF9003461A8 /* Assets.xcassets in Resources */,
 				6683A4831EA79CF9003461A8 /* MainMenu.xib in Resources */,
 			);
@@ -250,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6683A47E1EA79CF9003461A8 /* AppDelegate.swift in Sources */,
+				6691C0591EAA2F50000E2B16 /* modalGUy.swift in Sources */,
+				661ABBD21EABA07F004B5ACB /* Dude.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +462,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LoggaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyshnia.LoggaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Logga;
@@ -446,6 +475,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LoggaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyshnia.LoggaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Logga;
@@ -471,6 +501,7 @@
 				6683A49F1EA79CF9003461A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6683A4A01EA79CF9003461A8 /* Build configuration list for PBXNativeTarget "LoggaTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +510,7 @@
 				6683A4A21EA79CF9003461A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6683A4A31EA79CF9003461A8 /* Build configuration list for PBXNativeTarget "LoggaUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +519,7 @@
 				6683A4A51EA79CF9003461A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
