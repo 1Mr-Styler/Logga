@@ -23,20 +23,20 @@ class handler: NSObject {
 }
 
 enum Activity {
-    case Sleeping
-    case Working
-    case Studying
-    case Inactive
+    case sleeping
+    case working
+    case studying
+    case inactive
     
     func getView() -> ViewController {
         switch self {
-        case .Sleeping:
+        case .sleeping:
             return ViewController(nibName: "Sleeping", bundle: nil)!
-        case .Working:
+        case .working:
             return ViewController(nibName: "Working", bundle: nil)!
-        case .Studying:
+        case .studying:
             return ViewController(nibName: "Studying", bundle: nil)!
-        case .Inactive:
+        case .inactive:
             return ViewController(nibName: "Inactive", bundle: nil)!
         }
     }

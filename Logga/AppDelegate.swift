@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var mainView: NSView!
     var activeSub = NSView()
     
-    var Handler = handler(activity: Activity.Working)
+    var Handler = handler(activity: Activity.working)
     
     let Sleeper = ViewController(nibName: "Sleeping", bundle: nil)
     let Student = ViewController(nibName: "Studying", bundle: nil)
@@ -26,42 +26,42 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let Work = ViewController(nibName: "Working", bundle: nil)
     
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        self.window!.backgroundColor = NSColor.whiteColor()//NSColor(patternImage: NSImage(named: "collec.png")!)
+        self.window!.backgroundColor = NSColor.white//NSColor(patternImage: NSImage(named: "collec.png")!)
         print("Selected Seg: \(acSwitch.selectedSegment)")
         
         mainView.addSubview((Work?.view)!)
         activeSub = (Work?.view)!
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
-    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
     
-    @IBAction func SwitchButton(sender: AnyObject) {
+    @IBAction func SwitchButton(_ sender: AnyObject) {
         switch acSwitch.selectedSegment {
         case 0:
-            self.Handler = handler(activity: Activity.Sleeping)
+            self.Handler = handler(activity: Activity.sleeping)
             mainView.addSubview((Sleeper?.view)!)
             mainView.replaceSubview(activeSub, with: (Sleeper?.view)!)
             activeSub = (Sleeper?.view)!
         case 1:
-            self.Handler = handler(activity: Activity.Working)
+            self.Handler = handler(activity: Activity.working)
             mainView.addSubview((Work?.view)!)
             mainView.replaceSubview(activeSub, with: (Work?.view)!)
             activeSub = (Work?.view)!
         case 2:
-            self.Handler = handler(activity: Activity.Studying)
+            self.Handler = handler(activity: Activity.studying)
             mainView.addSubview((Student?.view)!)
             mainView.replaceSubview(activeSub, with: (Student?.view)!)
             activeSub = (Student?.view)!
         default:
-            self.Handler = handler(activity: Activity.Inactive)
+            self.Handler = handler(activity: Activity.inactive)
             mainView.addSubview((Rose?.view)!)
             mainView.replaceSubview(activeSub, with: (Rose?.view)!)
             activeSub = (Rose?.view)!
