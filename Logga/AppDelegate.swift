@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var acSwitch: NSSegmentedControl!
     
+    
     @IBOutlet weak var mainView: NSView!
     var activeSub = NSView()
     
@@ -25,9 +26,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let Rose = ViewController(nibName: "Inactive", bundle: nil)
     let Work = ViewController(nibName: "Working", bundle: nil)
     
+    let miLad = miLady()
+    
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+
         self.window!.backgroundColor = NSColor.white//NSColor(patternImage: NSImage(named: "collec.png")!)
         print("Selected Seg: \(acSwitch.selectedSegment)")
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,9 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Logga" customModuleProvider="target">
             <connections>
-                <outlet property="acSwitch" destination="T12-ff-RxO" id="0xK-79-ACV"/>
+                <outlet property="acSwitch" destination="T12-ff-RxO" id="Y7E-EE-dab"/>
                 <outlet property="mainView" destination="EiT-Mj-1SZ" id="ma5-m2-zbU"/>
-                <outlet property="switch" destination="T12-ff-RxO" id="Ktt-Lo-IzU"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -682,7 +681,7 @@
             <toolbar key="toolbar" implicitIdentifier="AE75C205-68E9-4148-8D1C-0AF6F7D2109E" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="KoR-IS-4V5">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="caZ-T2-Kw1"/>
-                    <toolbarItem implicitItemIdentifier="9ADDFEB1-25D5-449B-857A-5B1489B66392" label="" paletteLabel="Switch" selectable="YES" id="16T-W4-ARD">
+                    <toolbarItem implicitItemIdentifier="9ADDFEB1-25D5-449B-857A-5B1489B66392" label="" paletteLabel="switch" selectable="YES" id="16T-W4-ARD">
                         <nil key="toolTip"/>
                         <size key="minSize" width="100" height="28"/>
                         <size key="maxSize" width="290" height="28"/>
