@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5382457DD24D31A395A19E76 /* Pods_LoggaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EE6598C336A3D985EB7411 /* Pods_LoggaUITests.framework */; };
+		664290B31EBCFFC1006FF150 /* KSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664290B21EBCFFC1006FF150 /* KSNavigationController.swift */; };
 		6683A47E1EA79CF9003461A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6683A47D1EA79CF9003461A8 /* AppDelegate.swift */; };
 		6683A4801EA79CF9003461A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6683A47F1EA79CF9003461A8 /* Assets.xcassets */; };
 		6683A4831EA79CF9003461A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6683A4811EA79CF9003461A8 /* MainMenu.xib */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		09A7BFCD7D6E73E9C7A8232E /* Pods-LoggaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoggaUITests/Pods-LoggaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11EE6598C336A3D985EB7411 /* Pods_LoggaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664290B21EBCFFC1006FF150 /* KSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSNavigationController.swift; sourceTree = "<group>"; };
 		6683A47A1EA79CF9003461A8 /* Logga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6683A47D1EA79CF9003461A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6683A47F1EA79CF9003461A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		6683A47C1EA79CF9003461A8 /* Logga */ = {
 			isa = PBXGroup;
 			children = (
+				664290B21EBCFFC1006FF150 /* KSNavigationController.swift */,
 				66A4B2D71EB4C29B009072DA /* Images */,
 				6683A47D1EA79CF9003461A8 /* AppDelegate.swift */,
 				6683A47F1EA79CF9003461A8 /* Assets.xcassets */,
@@ -493,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A4B2DC1EB4D528009072DA /* ViewController.swift in Sources */,
+				664290B31EBCFFC1006FF150 /* KSNavigationController.swift in Sources */,
 				66A4B2D91EB4C3AC009072DA /* handler.swift in Sources */,
 				6683A47E1EA79CF9003461A8 /* AppDelegate.swift in Sources */,
 				66F4EE891EB80D7200621B8E /* JSql.swift in Sources */,

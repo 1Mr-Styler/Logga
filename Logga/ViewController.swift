@@ -8,8 +8,10 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, KSNavigationControllerCompatible {
 
+    weak var navigationController: KSNavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

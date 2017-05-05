@@ -26,6 +26,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let Rose = ViewController(nibName: "Inactive", bundle: nil)
     let Work = ViewController(nibName: "Working", bundle: nil)
     
+    var navVC : KSNavigationController?
+    
     let miLad = miLady()
     
 
@@ -35,8 +37,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.window!.backgroundColor = NSColor.white//NSColor(patternImage: NSImage(named: "collec.png")!)
         print("Selected Seg: \(acSwitch.selectedSegment)")
         
-        mainView.addSubview((Work?.view)!)
-        activeSub = (Work?.view)!
+        navVC = KSNavigationController(rootViewController: Work!)
+        navVC?.view.frame = NSMakeRect(0.0, 0.0, 480.0, 360.0) // Or use constraints if appropriate
+        self.window.contentViewController = navVC
+        self.window.orderFrontRegardless()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -46,30 +50,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
-    
+    var currntSeg : Int = 1
     @IBAction func SwitchButton(_ sender: AnyObject) {
         switch acSwitch.selectedSegment {
         case 0:
-            self.Handler = handler(activity: Activity.sleeping)
-            mainView.addSubview((Sleeper?.view)!)
-            mainView.replaceSubview(activeSub, with: (Sleeper?.view)!)
-            activeSub = (Sleeper?.view)!
+            currntSeg == 0 ?
+                self.navVC?.pushViewController(Sleeper!, animated: true) :
+                self.navVC?.popViewController(Sleeper!, animated: true)
         case 1:
-            self.Handler = handler(activity: Activity.working)
-            mainView.addSubview((Work?.view)!)
-            mainView.replaceSubview(activeSub, with: (Work?.view)!)
-            activeSub = (Work?.view)!
+            currntSeg < 1 ?
+                self.navVC?.pushViewController(Work!, animated: true) :
+                self.navVC?.popViewController(Work!, animated: true)
         case 2:
-            self.Handler = handler(activity: Activity.studying)
-            mainView.addSubview((Student?.view)!)
-            mainView.replaceSubview(activeSub, with: (Student?.view)!)
-            activeSub = (Student?.view)!
+            currntSeg < 2 ?
+                self.navVC?.pushViewController(Student!, animated: true) :
+                self.navVC?.popViewController(Student!, animated: true)
         default:
-            self.Handler = handler(activity: Activity.inactive)
-            mainView.addSubview((Rose?.view)!)
-            mainView.replaceSubview(activeSub, with: (Rose?.view)!)
-            activeSub = (Rose?.view)!
+            self.navVC?.pushViewController(Rose!, animated: true)
         }
+        currntSeg = acSwitch.selectedSegment
         print("Selected Seg: \(acSwitch.selectedSegment)")
     }
 }
